@@ -1,0 +1,139 @@
+@import "blocks";
+
+@font-face {
+    font-weight: normal;
+    font-family: Stratos;
+    font-style: normal;
+    src: local("Stratos"),
+        url("../fonts/stratos/Stratos-Regular.woff2") format("woff2"),
+        url("../fonts/stratos/Stratos-Regular.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: Stratos, "Open Sans", sans-serif;
+    font-style: normal;
+}
+
+.app {
+    @extend .centre;
+
+    height: 100vh;
+    background-color: #004980;
+}
+
+.level-popup {
+    @extend .centre;
+    @extend .popup;
+
+    &__header {
+        @extend .header;
+    }
+
+    &__choose-level {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    &__choose-btn {
+        width: 98px;
+        height: 98px;
+        color: #004980;
+        font-size: 64px;
+        line-height: 72px;
+        border: none;
+        border-radius: 12px;
+
+        &_active {
+            box-sizing: border-box;
+            border: 4px solid #7ac100;
+        }
+    }
+
+    &__start-btn {
+        @extend .btn;
+    }
+}
+
+.game-screen {
+    align-self: flex-start;
+    padding: 24px;
+}
+
+.game-bar {
+    color: white;
+    display: flex;
+    align-self: flex-start;
+    gap: 578px;
+
+    &__timer-description {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 16px;
+        line-height: 32px;
+        gap: 57px;
+        padding-right: 5px;
+        margin-bottom: -16px;
+    }
+
+    &__timer-time {
+        font-size: 64px;
+        line-height: 72px;
+    }
+
+    &__restart-btn {
+        @extend .btn;
+
+        margin-top: 24px;
+    }
+}
+
+.cards {
+    padding: 48px 0;
+    height: 282px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    gap: 16px;
+}
+
+.card {
+    height: 133px;
+    width: 95px;
+}
+
+.win-popup,
+.lose-popup {
+    @extend .centre;
+    @extend .popup;
+
+    &__header {
+        @extend .header;
+
+        width: 300px;
+        height: 48px;
+    }
+
+    &__current-time {
+        @extend .centre;
+
+        flex-direction: column;
+    }
+
+    &__time-description {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__time {
+        font-size: 64px;
+        line-height: 72px;
+    }
+
+    &__restart-btn {
+        @extend .btn;
+    }
+}
