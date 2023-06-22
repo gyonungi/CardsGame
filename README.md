@@ -9,5 +9,10 @@
 2.2-  9 рангов (6, 7, 8, 9, 10, Q, K, J, A)
 
 
-1)Выбор сложности ![image](https://github.com/gyonungi/CardsGame/assets/104500843/29ac12b3-87ff-4fbd-86e3-592672fda205)
+1)Выбор сложности ![image](https://github.com/gyonungi/CardsGame/assets/104500843/1c66296a-34c6-4790-8aab-f4de3b377204)
+
+2)Начало игры ![image](https://github.com/gyonungi/CardsGame/assets/104500843/2f1b3e63-6e8c-49b0-a413-ffbc3cd8723d)
+
+3)Выиграли ![image](https://github.com/gyonungi/CardsGame/assets/104500843/359d0ef8-8dd7-462d-a075-48a1fe62450c)
+4)Проиграли ![image](https://github.com/gyonungi/CardsGame/assets/104500843/6e385448-3039-41e5-a2e7-89a918859ee1)
 
